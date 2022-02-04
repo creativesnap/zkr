@@ -1,0 +1,551 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ذكرى</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Load Bootstrap RTL theme from RawGit -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<!-- <link rel="stylesheet" href="//cdn.rawgit.com/morteza/bootstrap-rtl/v3.3.4/dist/css/bootstrap-rtl.min.css"> -->
+</head>
+<body cz-shortcut-listen="true">
+<style>
+i.fa {
+    font-size: 46px;
+    color: #185370;
+}
+
+i.fa:hover {
+    color: black;
+}
+@font-face {
+  font-family: 'Circular';
+  src: url('fonts/Tajawal-Bold.ttf');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'hany';
+  src: url('fonts/Lalezar-Regular.ttf');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'memo';
+  src: url('fonts/BalooBhaijaan-Regular.ttf');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'lolo';
+  src: url('fonts/Lemonada-VariableFont_wght.ttf');
+  font-weight: normal;
+}
+
+
+@font-face {
+  font-family: 'harma';
+  src: url('fonts/Harmattan-Regular.ttf');
+  font-weight: normal;
+}
+.box{background:#7B417E;color:#fff;font-size:30px;text-align:center;width:100%;}
+.box2{background:#1e77af;color:#fff;font-size:30px;text-align:center;width:100%;}
+body {
+  font-family: 'harma', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.mb-5 {
+  font-family: 'Circular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+.features-icons.bg-light.new {
+  background-color: #0069D9 !important;
+  padding: 1rem 0;
+}
+
+.features-icons.bg-light.new p.lead.mb-0{
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+
+
+
+
+header.masthead {
+background: red;
+  position: relative;
+  background-color: #fff;
+
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+header.masthead .overlay {
+  position: absolute;
+/* background: #000; */
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  /* opacity: 0.3; */
+}
+
+
+@media(max-width : 575px) {
+  h3  , h1 , h2 , h4{
+    font-size: 1.2rem;
+  }
+  p.lead.mb-0 {
+  }
+}
+
+
+
+
+header.masthead h1 {
+  font-size: 22px;
+}
+
+@media (min-width: 768px) {
+  header.masthead {
+    padding-top: 5rem;
+    padding-bottom: 12rem;
+  }
+  header.masthead h1 {
+    font-size: 3rem;
+  }
+}
+
+.showcase .showcase-text {
+  padding: 1.5rem;
+}
+
+.showcase .showcase-img {
+  min-height: 30rem;
+  background-size: cover;
+}
+
+@media (min-width: 768px) {
+  .showcase .showcase-text {
+    padding: 7rem;
+  }
+}
+
+.features-icons {
+  padding-top: 3rem;
+  padding-bottom: 0;
+}
+
+.features-icons .features-icons-item {
+  max-width: 20rem;
+}
+
+.features-icons .features-icons-item .features-icons-icon {
+  height: 7rem;
+}
+
+.features-icons .features-icons-item .features-icons-icon i {
+  font-size: 4.5rem;
+}
+
+.features-icons .features-icons-item:hover .features-icons-icon i {
+  font-size: 5rem;
+}
+
+.testimonials {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+.testimonials .testimonial-item {
+  max-width: 18rem;
+}
+
+.testimonials .testimonial-item img {
+  max-width: 12rem;
+  box-shadow: 0px 5px 5px 0px #adb5bd;
+}
+
+.call-to-action {
+  position: relative;
+  background-color: #343a40;
+  background: url("images/bg-masthead.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-top: 1.3rem;
+  padding-bottom: 1.3rem;
+}
+
+.call-to-action .overlay {
+  position: absolute;
+  background-color: #212529;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+}
+
+footer.footer {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.form-signin .checkbox{
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.border-box {
+    padding: 0px;
+    /* border: 1px solid #6787a9; */
+    margin: 15px;
+}
+p.lead.mb-0 {
+    font-size: 40px;
+    color: #7B417E;
+    clear: both;
+    padding: 15px;
+	  font-family: 'Circular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+}
+</style>
+
+<!-- 
+    <nav class="navbar navbar-light bg-light static-top">
+      <div class="container">
+        <a class="navbar-brand" href="https://salla.sa/zkr/">ذكرى</a>
+        <a href="https://salla.sa/zkr/">
+          <div id='signin_btn' class="btn btn-primary">المتجر</div>
+        </a>
+        
+      </div>
+    </nav> -->
+
+    <!-- Masthead -->
+    <header class="masthead text-center">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+	
+          <div class="col-xl-9 mx-auto">
+		  
+		  <style>
+		  .img-thumbnail {
+		  background-color:unset;
+		  border:unset;
+		  }
+		  </style>
+		  			<img src="images/logo.jpeg" alt="ذكرى" class="img-thumbnail mb-4" width="100" style="border-radius: 50%;">
+
+            <h3 class="mb-3" style="font-family: Circular;line-height: 1.7;">
+
+			
+			
+              <span  style="color: white;background-color: darkred;padding: 5px;margin-bottom: 1px;display: inline-block;">
+                 تحب زوجتك أو صديقتك بس دائم
+              </span>
+              
+              <br/> 
+              
+              <span   style="color: white;background-color: darkred;padding: 5px;margin-bottom: 1px;display: inline-block;">
+                ،،، تجيب العيد وتزعلها 
+              </span>
+              <br/>
+              <!-- <div class="border-box"></div> -->
+
+              <span  style="padding: 5px;margin-bottom: 1px;display: inline-block;">
+                ودك تعبر لها عن مشاعرك
+
+              </span>
+              <br/>
+
+              <span  style="padding: 5px;margin-bottom: 1px;display: inline-block;">
+                بطريقة ما تنساها لسنين ؟
+
+              </span>
+              <br/>
+
+              <span  style="padding: 5px;margin-bottom: 1px;display: inline-block;">
+                تخيل لو قلت لك على طريقة مجربة و مضمونة 
+
+              </span>
+              <br/>
+
+              <span  style="padding: 5px;margin-bottom: 1px;display: inline-block;">
+                هل تعلم قلادة ناعمة و مميزة ومطلية بالذهب بأسمها 
+
+              </span>
+              <br/>
+
+              <span  style="padding: 5px;margin-bottom: 1px;display: inline-block;">
+                راح تبين محبتك و تقديرك لها 
+
+              </span><br/>
+
+              <span  style="padding: 5px;margin-bottom: 1px;display: inline-block;">
+                وبتفرحها لدرجة راح تذكر
+
+              </span>
+              <br/>
+
+              <span  style="padding: 5px;margin-bottom: 1px;display: inline-block;">
+                ،،،  مشاعرك الحلوة
+
+              </span>
+              
+              <br/>
+              
+              
+
+<!-- 
+              بتبين محبتك و تقديرك لها <br/>
+              وبتفرحها لدرجة راح تذكر  <br/>
+              مشاعرك الحلوة<div class="border-box"></div> -->
+
+
+          </div>
+
+        </div>
+      </div>
+    </header>
+    <section class="features-icons bg-light text-center new">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="mx-auto mb-lg-0 mb-lg-12">
+              <div class="features-icons-icon d-flex">
+                <i class="icon-screen-desktop m-auto text-primary"></i>
+              </div>
+              <!-- <h3>
+                أطلب الأن وفرحها بقلادة باسمها 
+              </h3> -->
+              <a href="https://salla.sa/zkr/">
+                <p class="lead mb-0">  
+                  أطلب الآن وعبر عن حبك لها 
+
+                </p>
+              </a>
+              <!-- <i class="fa fa-angle-down"></i> -->
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <style>
+      .image {
+        margin-bottom: 15px;
+      }
+    </style>
+    <div class="gallery" style="margin-top: 20px;">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <div class="image">
+              <img src="images/1.jpeg" class="w-100">
+            </div>
+          </div>
+          <!-- <div class="col-6">
+            <div class="image">
+              <img src="images/2.jpeg" class="w-100">
+            </div>
+          </div> -->
+          
+          <div class="col-6">
+            <div class="image">
+              <img src="images/4.jpeg" class="w-100">
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="image">
+              <img src="images/5.jpeg" class="w-100">
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="image">
+              <img src="images/3.jpeg" class="w-100">
+            </div>
+          </div>
+        
+        </div>
+      </div>
+    </div>
+    <!-- Icons Grid -->
+    <section class="features-icons bg-light text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="mx-auto mb-5 mb-lg-0 mb-lg-12">
+              <div class="features-icons-icon d-flex">
+                <i class="icon-screen-desktop m-auto text-primary"></i>
+              </div>
+              <h3>
+                بتكون هدية مستحيل تنساها 
+خاصة أنها منحوته خصيصا لها باسمها
+وبتكون ذكرى حلوه لسنين
+<br/>
+<br/>
+تدري ما يكلفك 
+
+ <span style="color: brown;font-weight: bold;">
+  199
+  ريال 
+ </span>
+  
+  شامل التوصيل و الضريبة و التغليف
+
+ <br/>
+ <br/>
+ لو حاب تطلبه اللحين بس فلوسك ما تكفي 
+قسط المبلغ على ٤ دفعات بسعر الكاش
+عن طريق تابي في صفحة الدفع
+              </h3>
+              
+              <!-- <i class="fa fa-angle-down"></i> -->
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <a href="https://salla.sa/zkr/" style="text-align: center;margin-top: 25px;display: block;font-size: 1.5rem;color: white  !important;background-color: #0069D9 !important;">
+      <p class="lead mb-0" style="color: white;font-size: 1.5rem;padding: 1rem 0;"> 
+        أطلب الآن وفرحها بقلادة باسمها 
+
+      </p>
+    </a>
+
+    <!-- Image Showcases -->
+    <section class="showcase">
+      <div class="container-fluid p-0">
+        <div class="row no-gutters">
+
+          <div class="col-lg-12 order-lg-1 my-auto showcase-text" >
+            <h2 style="text-align:center;font-size: 30px;">أراء العملاء</h2>
+            <!-- <p class="lead mb-0" style="font-family:Circular;font-size: 21px;
+    text-align: center;">عبر متجرنا الإلكتروني وبباقات متنوعة تلائم كل شخص مهما كان نشاطه أو حجمه أو مهما كانت ميزانيته 
+ومن خلال منصة سناب شات Snapchat 
+حرصنا فيها على التنوع تلبية لرغبة عملائنا الأعزاء 
+وعلى أن تكون متاحة للجميع 
+يهمنا دائماً أن نكون معك وجزء لا يتجزا من نجاحاتك</p> -->
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-6 col-12">
+                    <div class="image">
+                      <img src="images/6.jpeg" class="w-100">
+                    </div>
+                  </div>
+                 
+                  <div class="col-md-6 col-12">
+                    <div class="image">
+                      <img src="images/9.jpeg" class="w-100">
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12">
+                    <div class="image">
+                      <img src="images/10.jpeg" class="w-100">
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- Call to Action -->
+    <section class="call-to-action text-white text-center" style="font-family: 'Circular'">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-9 mx-auto">
+            <!-- <h2 class="mb-4">اطلب الآن وعبر عن حبك لها </h2> -->
+          </div>
+          <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+              <div class="form-row">
+     
+                <div class="col-12 col-md-12">
+                  <a href="https://salla.sa/zkr/" class="btn btn-block btn-lg btn-primary">اطلب الآن وفرحها بقلادة بأسمها</a>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+	
+	
+    <!-- Testimonials -->
+    <!-- <section class="showcase" style=" padding: 24px;   text-align: center;">
+      <div class="container">
+        <h2 class="mb-5">طيب ليش سناب شات Snapchat ؟</h2>
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+             <i class="fa fa-comments-o"></i>
+              <h5>لانه المنصة الاكبر في المملكة العربية السعودية</h5>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+              <i class="fa fa-users"></i>
+              <h5>أكثر من 16 مليون شخص حملوا التطبيق</h5>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+              <i class="fa fa-thumbs-o-up"></i>
+              <h5>8 ملايين شخص على المنصة يومياً</h5>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+              <i class="fa fa-heart"></i>
+              <h5>منصة يحبها الشعب ويحقق من خلالها الكثير من أصحاب الانشطة نجاحات ملحوظة</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+
+
+    <!-- Footer -->
+    <footer class="footer bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 h-100 text-center  my-auto">
+<p class="text-muted small mb-4 mb-lg-0" style="font-size: 27px;    font-family: 'Circular';"> صناعتها و نحتها 
+  تأخذ 4 أيام عمل 
+  والتوصيل من 1 إلى 5 أيام
+ </p>
+
+          </div>
+
+        </div>
+      </div>
+    </footer>
+
+
+
+
+
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+
+</body>
+</html>
